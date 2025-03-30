@@ -19,7 +19,7 @@ const checkWeather = async (city) => {
     let skyCondition = data.weather[0].main;
     document.querySelector(
       ".weather-icon"
-    ).src = `weather-app/images/${skyCondition}.png`;
+    ).src = `images/${skyCondition}.png`;
     document.querySelector(".weather-icon").alt = skyCondition;
 
     document.querySelector(".weather").style.display = "block";
